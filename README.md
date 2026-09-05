@@ -31,7 +31,6 @@ Most "LLM + data" demos let the model generate and execute its own code — fast
 - [Quickstart](#-quickstart)
 - [Tests](#-running-the-tests)
 - [What this doesn't do](#-what-this-deliberately-does-not-do)
-- [For interviewers](#-if-youre-evaluating-this-for-an-interview)
 
 <br>
 
@@ -151,12 +150,3 @@ python -m pytest tests/ -v
 
 <br>
 
-## 🎯 If you're evaluating this for an interview
-
-The three things worth asking about are:
-
-1. **Why is the tool whitelisted** rather than letting the model generate pandas/SQL directly?
-2. **What happens when Groq returns a malformed or null tool call**, and why?
-3. **Why is the hop cap 4**, and what does the failure mode look like at hop 5?
-
-All three have concrete, tested answers in this repo — not hand-waving.
